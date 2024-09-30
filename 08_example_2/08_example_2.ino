@@ -60,16 +60,7 @@ void loop() {
   Serial.print(",distance:");  Serial.print(distance);
   Serial.print(",Max:");       Serial.print(_DIST_MAX);
   Serial.println("");
-  
-  // do something here
-  if(distance <= _DIST_MIN || distance >= _DIST_MAX){
-    analogWrite (PIN_LED, 255);
-  }else{
-    brightness = abs(200-distance);
-    correctionValue = 255 * (brightness / 100);
-    analogWrite (PIN_LED,correctionValue);
-  }
-  
+    
   // update last sampling time
   last_sampling_time += INTERVAL;
 }
