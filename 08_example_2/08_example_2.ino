@@ -13,6 +13,7 @@
 #define TIMEOUT ((INTERVAL / 2) * 1000.0) // maximum echo waiting time (unit: usec)
 #define SCALE (0.001 * 0.5 * SND_VEL) // coefficent to convert duration to distance
 
+
 unsigned long last_sampling_time;   // unit: msec
 
 void setup() {
