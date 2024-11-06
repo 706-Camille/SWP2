@@ -90,7 +90,6 @@ void loop() {
     myservo.writeMicroseconds(duty_cycle);
   }
 
-
   // output the distance to the serial port
   Serial.print("Min:");Serial.print(_DIST_MIN);
   Serial.print(",dist:");Serial.print(dist_raw);
